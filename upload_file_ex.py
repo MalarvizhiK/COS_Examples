@@ -14,7 +14,7 @@ def main(**kwargs):
     ibm_service_instance_id='xx-xx-xx-xx-xxx',
     ibm_auth_endpoint="https://iam.cloud.ibm.com/identity/token",
     config=Config(signature_version='oauth'),
-    endpoint_url='https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints')
+    endpoint_url='https://s3.us-south.cloud-object-storage.appdomain.cloud')
     try:
         res=cos.upload_file(Filename='test.txt', Bucket='cloud-object-storage-8w-cos-standard-c5u',Key='test.txt')
     except Exception as e:
